@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            font-size: 18px;
+            text-align: justify;
+            padding: 20px;
+            border-radius: 20px;
+            min-width: 280px; /*largura de celulares antigos*/
+            max-width: 800; /*largura de pc */
+            margin: auto; /* muito util para deixar o conteudo centralizado*/
+            line-height: 1.6em;
+        }
+        main >h1{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-shadow: 10px 10px 10px 10px black;
+        }
+        img{
+            width: 100%;/*adequa a imagem para o tamanho da tela */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Responsivo é uma técnica de estruturação HTML e CSS, que consiste em adaptar o site ao browser do usuário sem que seja necessário definir várias folhas de estilos especíificaspara cada resolução, ou seja, é um tipo de design onde o layout fica fluído e variante de acordo com a resolução do usuário.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis nulla, soluta provident, nihil perferendis fuga dolores consequatur molestiae nam culpa, magnam odit ex quaerat quidem! A quae veniam laudantium sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolor aliquam est natus quidem! Reiciendis ad consectetur, exercitationem mollitia ipsam, totam repellat repudiandae rerum hic natus ipsa molestias voluptatum beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ratione adipisci perspiciatis veniam optio placeat odit, expedita maxime. Eos esse eveniet deserunt quas ullam excepturi libero quae molestias recusandae voluptatibus! </p>
+        <picture>
+            <source media="(max-width:600px)" srcset="imagens/irina-blok-pq.jpg"><!--imagem chegar em 600px vai carregar essa imagem pequena-->
+            <img src="imagens/irina-blok.jpg" alt="foto Irina"><!--imagem grande-->
+        </picture>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi animi nam facere, dignissimos quis atque praesentium. Maxime ipsam cumque corporis atque, eligendi sit quo velit tenetur nostrum accusantium a laudantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid exercitationem explicabo, ratione numquam eveniet officiis iure eligendi fugit minima dolore sunt, placeat reiciendis magnam sequi blanditiis nemo iusto sint commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis incidunt ut dicta laboriosam, quae numquam sapiente tempore illum omnis qui? Adipisci facere officiis veniam consequatur odit, beatae in qui facilis.</p>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            background-color:bisque;
+            font-family:Arial, Helvetica, sans-serif; /*o navegador vai abrir o primeiro, caso não dê abre o próximo da lista */
+            /* aqui pode usar as cinco categorias: 1-Serifada; 2-Sans-serif(sem serifa); 3-Monoespaçada(com ou sem serifa);4-Handwiting/Script, 5-Display.*/
+            color: brown;
+            /*Medidas absolutas
+            cm, mm, in(polegadas), px(pixel), pt(ponto),pc(paicas)
+
+            Medidas relativas:
+            em, ex, rem, vw, vh, %       
+            
+            Dê preferencia para:px, em
+
+            16px geralmente = 1em
+            */
+            font-size: 1em ;
+            font-weight:bolder;
+            /* lighter, normal, bold, bolder, 100 a 900. Ou CTRL + ESPAÇO*/
+            font-style: italic;
+            /* italic, normal, oblique*/ 
+            text-decoration: underline;
+            /* decoração do texto*/
+
+            /* SHORTHAND/MÃOZINHA tudo em um com a "font" tudo dev estar nessa ordem: 
+            font-style + font-weight + font-size+font-family.
+            ex: font: italic bolder 3em 'Work Sans', sans serif*/
+
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            color: brown;
+        }
+
+        p{
+            color:rgba(165, 42, 42, 0.966);
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Trabalhando com Fontes</h1>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit cupiditate ipsa animi, neque nam omnis dignissimos eius recusandae vitae alias suscipit voluptatum debitis repellendus et quis quidem eos dolores consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi illo reprehenderit ex voluptatum! In dolores harum officiis, ut voluptate repudiandae similique, accusamus exercitationem impedit quisquam eaque cupiditate, iure velit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quas blanditiis, architecto mollitia rem dolor quos! Illum asperiores ab minima itaque labore numquam adipisci voluptatem rem, provident corporis nostrum officiis.</p>    
+<h2>Subtítulo do Exercício</h2>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime accusantium aspernatur voluptatum rem aliquam exercitationem iste nihil minus saepe obcaecati laudantium incidunt debitis, praesentium eum porro voluptatem sapiente tempore fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam commodi, non vitae dicta, veniam cumque voluptatum atque minus quos tempora eveniet aspernatur molestiae voluptatem quasi veritatis alias facere perspiciatis praesentium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores deserunt iusto inventore ut quisquam quaerat! Ratione hic distinctio non ut vero. Quam debitis obcaecati temporibus quas porro dignissimos deleniti beatae?</p>
+</body>
+</html>

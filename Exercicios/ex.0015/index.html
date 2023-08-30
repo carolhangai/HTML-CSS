@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+
+</head>
+<body>
+<h1>Imagem Dinâmica</h1>
+<p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho em seu navegador.</p>
+<picture>
+    <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-gg.png" alt="imagem flexível">
+</picture>
+<!--"media": indica o tamanho maximo a ser considerado  para carregar a imagem  indicada no atributo srcset-->
+<!--"srcset": configura o nome da imagem que será carregada quando o tamanho indicado for atingido.-->
+<!--"type": vai indicar a midia type, no caso aqui é "image/png"-->
+
+<h1>Reproduzindo aúdio</h1>
+<p>Vamos aprender a reproduzir aúdios em HTML5</p>
+<audio preload="metadata" autoplay controls loop >
+    <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+    <source src="midia/happy-mistake.mp3" type="audio/ogg">
+    <source src="midia/happy-mistake.mp3" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir o aúdio!</p>
+</audio>
+<!--Formatos compatíveis: MP3, WAV, OGG-->
+<!--"preload" indica se o audio será carregado ou não. Tem tres possibilidades: "metadata" que carrega nome e duração, "none" não vai carregar até que vc clique no play, ou "auto"(padrão) vai carregar automaticamente-->
+
+<!--"autoplay" quando inserido vai iniciar a reprodução do aúdio assim que a página for carregada.-->
+<!--"controls" vai apresentar o player  na tela, se não for colocado essa tag, o usuário não poderá interagir-->
+<!--"loop" vai fazer a reprodução eternamente-->
+
+<!--Dentro da tag "audio são adicionados varios "source"/tipos de arquivos, primeiro o navegador tenta tocar o de cima e assim por diante.-->
+
+
+
+<!--Vídeo de Colin Foote: https://www.pexels.com/pt-br/video/calma-tranquilidade-paz-dji-17621117/montanha-->
+<!--Vídeo de Dima Osadchy: https://www.pexels.com/pt-br/video/excepcional-extraordinario-tiro-com-drone-costa-rochosa-8960304/-->
+<!--Vídeo de Mikhail Nilov: https://www.pexels.com/pt-br/video/praia-litoral-penhasco-abismo-8357478/ penhasco-->
+</body>
+</html>

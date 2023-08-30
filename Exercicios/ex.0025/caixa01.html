@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{ /* H1 por padrão é box-level, mas pode ser transformado em INLINE com o display:inline; e tira height e width */
+            display: inline;
+            background-color: lightgray;
+            text-align: justify;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+             /*dá para simplificar */
+            /*border: 10px, solid, darkslategray; */
+
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+             /*dá para simplificar */
+             /*padding: 10px;    se for todos iguais é so colocar uma vez só*/
+              /*se colocar só dois valores, será o cima e baixo iguais e lados iguais */
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+             /*margim: 20px, 20px, 40px, 20px; */
+            /*margin: auto;
+            para centralizar a caixa  */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: aqua;
+        }
+        a{ /*inline level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        } /*da pra inverter tbm colocando display:block; */
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragráfos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas.</a>Vamos ver como tudo isso funciona.</p>
+    
+</body>
+</html>

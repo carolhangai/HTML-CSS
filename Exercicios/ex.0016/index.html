@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+<h1>Inserindo vídeos hospedados localmente</h1>
+<p>Este vídeo está hospedado localmente no meu próprio servidor.</p>
+
+<video width="500"  controls autoplay loop>
+<source src="videos/video.mp4" type="video/mp4">
+<source src="videos/Video.mkv" type="video/mkv">
+<source src="videos/Video.webm" type="video/webm">
+<p>Seu navegador não tem compatibilidade com reprodução de vídeos, tente outro navegador!</p>
+</video>
+<!--videos hospedados com a tag "videos" consomem muitos dados, isso pode pesar $ no consumo de banda para o cliente.
+-->
+
+<h1>Inserindo videos do Youtube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uzUDMGDQBuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<h1> Inserindo videos do Vimeo</h1>
+<iframe src="https://player.vimeo.com/video/358296442?h=8b59dc64ae" width="560" height="310" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p>Você pode encontrar mais em: <a href="https://vimeo.com/358296442">Office Cat and Fish - Time For Coffee</a> from <a href="https://vimeo.com/monkeytennis">Monkey Tennis Animation Studio</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<!-- Videos de sistes externos não consomem seus dados.-->
+</body>
+</html>
