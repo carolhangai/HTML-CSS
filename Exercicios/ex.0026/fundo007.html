@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizar Caixas</title>
+    <style>
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+            
+        }
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;/*se for absolute, dá pra mexer no left e top */
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%; /*distancia entre a borda e o container amarelo */
+            top: 50%;/*distancia to topo com o container amarelo */
+            /*margin: auto; para centralizar a caixa amarela */
+            transform: translate(-50%, -50%);/* centralizar a caixa amarela*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
