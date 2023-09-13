@@ -1,25 +1,38 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');/*link da fonte passion one */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');/*link da fonte sriracha */
+
+:root{
+    --fonte1: 'Verdana', Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;/*font family */
+    --fonte3: 'Sriracha', cursive;/*font family */
+}
 
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 } /*configurações gerais */
 
 html, body{
-    min-height: 100vh;
+    min-height: 100vh; /*Tamanho do site */
     background-color: darkgray;
+    font-family: var(--fonte1);
+}/*configurações de html e body */
 
-}
 header{
-    background-color: black; /*cor de fundo */
-    color: white; /*cor da letra */
+    background-color: black; /*cor de fundo do cabeçalho */
+    color: white; /*cor da letra do cabeçalho */
     text-align: center;
 }
 
 header > h1{
     padding-top: 50px;
     text-variant: small-caps;
-    /*text-transform: uppercase; transform muda formato de letras */
+    font-family: var(--fonte2);
+    font-size: 4em;
+    font-size: 10vw;
+    /* text-transform: uppercase; transforma todas as letras em maiusculas */
 }
 
 header > p {
@@ -30,18 +43,21 @@ header a, footer a{
     color: white;
     text-decoration: none;
     font-weight: bolder;
-}
+}/*configuração do link e do rodapé */
 
 header a:hover, footer a:hover{
     text-decoration: underline;
-}
+}/* underline quando passa o mouse */
 
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em; /*espaçamento entre linhas */
     padding-left: 30px;
-}
+    font-family: var(--fonte3);
+    font-size: 3.5vw;/*vw= letra se adatpa a largura da página */
+}/* vh= view hight */
+
 section.normal{
     background-color: white;
     color: black;
@@ -51,8 +67,9 @@ section.imagem{
     color: white;
 }
 
-section.imagem{
-    width: 400px;
+section.imagem >p{
+    display: inline-block; /*caixa que se adapta ao tamanho do conteúdo */
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 footer{
@@ -60,4 +77,4 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
-}
+}/*rodapé */
