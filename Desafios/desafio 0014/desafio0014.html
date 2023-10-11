@@ -15,19 +15,23 @@
             border: 1px solid gray;
             padding: 10px;
         }
+        tr.destaque{
+            background-color: rgba(128, 128, 128, 0.363);
+        } /*crie uma classe para colorir linha*/
+
        
     </style>
 </head>
 <body>
     <table>
         <thead>
-            <tr>
+            <tr class="destaque"><!--crie uma classe para colorir linha-->
                 <th rowspan="2" scope="col">ÁREA</th>
                 <th rowspan="2" scope="col">DISCIPLINAS</th>
                 <th colspan="2" scope="colgroup">NOTAS</th>
                 <th rowspan="2" scope="col">MÉDIA</th>
             </tr>
-            <tr>
+            <tr class="destaque"><!--crie uma classe para colorir linha-->
                 <td>Nota 01</td>
                 <td>Nota 02</td>
             </tr>
@@ -58,7 +62,7 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
+            <tr class="destaque"><!--crie uma classe para colorir linha-->
                 <td colspan="4">Média de Exatas</td>
                 <td>0.0</td>
             </tr>
@@ -75,7 +79,7 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
+            <tr class="destaque"><!--crie uma classe para colorir linha-->
                 <td colspan="4" scope="rowgroup">Média de humanas</td>
                 <td>0.0</td>
             </tr>
